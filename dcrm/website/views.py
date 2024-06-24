@@ -21,6 +21,8 @@ def home(request):
     else:
         return render(request, 'home.html', {})
 
+def register_user(request):
+   return render(request, 'register.html', {})
 
 def logout_user(request):
     logout(request)
